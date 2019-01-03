@@ -14,3 +14,7 @@ body {
   .remv{
     cursor:url("./subtract.png"), auto;
   }
+
+  .remv:hover{
+    text-decoration: line-through;
+  }
