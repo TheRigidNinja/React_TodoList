@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    color: blue;
+    width: 600px;
+    left:calc(50% - 300px);
+  }
+
+
+  /* li{
+    cursor: pointer;
+  } */
