@@ -26,7 +26,7 @@ class AddTodo extends Component{
         return(
             <form onSubmit={this.handleSubmit}>
                 <div className="input-group mb-3 input-group-mx">
-                    <input type="text" placeholder="Add A Todo" className="form-control" onChange={this.handleChange} value={this.state.content}/>
+                    <input type="text" placeholder="Add a task" className="form-control" onChange={this.handleChange} value={this.state.content}/>
                     <div className="input-group-append">
                         <button className="btn btn-outline-dark">ADD</button>
                     </div>
