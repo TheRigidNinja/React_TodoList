@@ -32,7 +32,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App container">
+      <div className="container">
         <h1 className="jumbotron display-1 text-center">Todo's</h1>
 
         <Todos todos={this.state.todos} RemoveTodo={this.RemoveTodo}/>
