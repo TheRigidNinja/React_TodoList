@@ -19,7 +19,11 @@ switch(true){
 const Todos = ({ todos, RemoveTodo}) => {
     const todo = todos.length ?(
         todos.map(todo => {
-            return <li className="list-group-item remv" key={todo.id} onClick={()=>{RemoveTodo(todo.id)}}>{todo.content}</li>
+            return(
+                <li className="list-group-item remv" key={todo.id} onClick={() => { RemoveTodo(todo.id) }}>{todo.content}
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                </li>
+            )
         })
     ) : <li className="list-group-item text-center" key={0}>{daystate}</li>
     

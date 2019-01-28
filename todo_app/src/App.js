@@ -20,13 +20,13 @@ class App extends Component {
   }
   
   RemoveTodo = (remv) => {
-    const todos = this.state.todos.filter(todo =>{
-      return todo.id !== remv;
-    })
+    // const todos = this.state.todos.filter(todo =>{
+    //   return todo.id !== remv;
+    // })
 
-    this.setState({
-      todos: todos
-    })
+    // this.setState({
+    //   todos: todos
+    // })
   }
 
 
