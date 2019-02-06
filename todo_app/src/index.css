@@ -1,30 +1,197 @@
-body {
+ body {
   margin: 0;
   padding: 0;
+  /* position: absolute; */
+  overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
-    color:darkblue;
+    /* overflow: hidden; */
   }
 
 
-@media only screen and (min-width: 1100px) {
-  .container{
-    width: 800px
+/* --------------------------Login in --------------------------*/
+
+.LogInput{
+  margin-top:20px !important;
+  width: 90%; 
+  left: 5%;
+}
+
+.LoginBTN{
+  position: relative;
+  left: calc(50% - 75px);
+  margin:10px 0px 10px 0px; 
+}
+
+.LoginBTN button{
+  width: 150px !important;
+}
+
+.RegisterBTN{
+  position: relative;
+  left: calc(100% - 100px);
+}
+
+a{
+  text-decoration: none;
+}
+
+.Progress div{
+  background: #F98B13;
+}
+
+.Progress{
+  display: none;
+}
+
+.Header{
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .Header{
+    font-size: 9vw !important;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .Header{
+    font-size: 5vw !important;
   }
 }
 
 
-@media only screen and (min-width: 1000px) {
-  .container{
-    width: 80%
+@media only screen and (min-width: 330px) {
+  .todoList,.inputProcess{
+    position: relative;
+    left: 5%;
+    width: calc(100% - 45px);
+  }
+
+  
+}
+
+@media only screen and (min-width: 680px) {
+  .todoList,.inputProcess{
+    position: relative;
+    left: calc(50% - 280px);
+    width: 550px;
+  }
+
+
+}
+.inputProcess{
+  margin: 20px 0px 0px 20px;
+  width: 106%;
+}
+.todoList li:hover{
+  background: rgb(248, 248, 248);
+} 
+
+.todoList{
+  height: calc(100% - 200px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.cont{
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%
+
+}
+
+
+/* ---------ADD TODO LIST ------------- */
+ .AddTasks, .datetime-local{
+    width: calc(100% - 50px) !important;
+  }
+
+.inputProcess button,.datetime-local label,.datetime-local input{
+  margin-top:15px; 
+}
+ 
+
+.editList{
+  margin-top: 50px;
+} 
+
+
+.backBTN{
+  left: 15px;
+}
+
+
+@media only screen and (min-width: 680px) {
+  .todoList{
+  height: calc(100% - 250px) !important;
+}
+  .Menu{
+    position: absolute;
+    top:calc(100% - 210px);
+    left: calc(50% - 278px);
+  }
+  .Menu button{
+    margin-left: 50px;
   }
 }
 
-  .remv{
-    cursor:url("./subtract.png"), auto;
-  }
 
-  .remv:hover{
-    text-decoration: line-through;
+@media only screen and (max-width: 680px) {
+  .Menu{
+    position: absolute;
+    top:calc(100% - 140px);
+    left: calc(50% - 155px);
   }
+  .Menu button{
+    margin-left: 2px;
+  }
+}
+
+
+.quotes h2, .quotes p{
+  text-align: center
+}
+
+.signout{
+  position: absolute;
+  margin: 5px !important
+}
+
+.exitIcon{
+  transition: all 0.2s;
+ padding-left:2px; 
+}
+
+
+.signout :hover .exitIcon{
+  padding-left:10px; 
+}
+
+.MuiPaper-elevation6-46 div{
+  width: 100% !important;
+  text-align: center !important;
+}
+
+
+::-webkit-scrollbar
+{
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(37, 37, 37, 0.5);
+  border-radius: 2px;
+}
