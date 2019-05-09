@@ -1,2 +1,2 @@
 
-### `This is a simple react todo list`
+### Jus a simple Todo's application
